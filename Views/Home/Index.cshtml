@@ -1,0 +1,35 @@
+@{ ViewData["Title"] = "Home Page"; }
+
+<form class="form-group" method="post" asp-action="Index" asp-controller="Home" enctype="multipart/form-data">
+    <div>
+        <div>
+            <label for="IpAddress">IP Address:</label>
+            <input type="text" name="IpAddress" class="form-control" value="" />
+        </div>
+        <div style="margin-top:10px;">
+            <input type="submit" value="Parse" class="btn btn-info btn-sm" />
+        </div>
+    </div>
+</form>
+
+<strong>IP Address:</strong>
+<span style="color:teal">@ViewData["ip"]</span></br>
+<strong>Country Code:</strong>
+<span style="color:teal">@ViewData["country_code"]</span></br>
+<strong>Country Name:</strong>
+<span style="color:teal">@ViewData["country_name"]</span></br>
+<strong>Region Code:</strong>
+<span style="color:teal">@ViewData["region_code"]</span></br>
+<strong>Region Name:</strong>
+<span style="color:teal">@ViewData["region_name"]</span></br>
+<strong>City:</strong>
+<span style="color:teal">@ViewData["city"]</span></br>
+<strong>Zip Code:</strong>
+<span style="color:teal">@ViewData["zip_code"]</span></br>
+<strong>Time Zone:</strong>
+<span style="color:teal">@ViewData["time_zone"]</span></br>
+<strong>Latitude:</strong>
+<span style="color:teal">@ViewData["latitude"]</span></br>
+<strong>Longitude:</strong>
+<span style="color:teal">@ViewData["longitude"]</span></br>
+
